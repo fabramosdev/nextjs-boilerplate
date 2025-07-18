@@ -6,7 +6,7 @@ import { defineConfig } from "eslint/config";
 
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], plugins: { js }, extends: ["js/recommended", "next/core-web-vitals"] },
+  { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], plugins: { js }, extends: ["js/recommended", "next/core-web-vitals", "prettier"] },
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], languageOptions: { globals: globals.browser } },
   { rules: {
     "react/react-in-jsx-scope": "off",
